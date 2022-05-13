@@ -38,6 +38,7 @@ module.exports = {
         'routers': 'container/services/RouterServiceProvider',
         'auth': 'container/services/AuthServiceProvider',
         'sockets': 'container/services/SocketServiceProvider',
+        'webflow': 'container/services/WebflowServiceProvider',
         // 'Mailer': 'container/services/MailerServiceProvider', // ->> enable this if you wish to provide email services
     },
 

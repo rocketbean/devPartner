@@ -12,8 +12,12 @@ module.exports = function() {
     * [AuthRouteExceptions] array option.
     */
     
-    route.get("/", "ChasiController@index");
-    route.get("/welcome/:name", "ChasiController@welcome");
-    
 
+    /**
+    * files included (`for further checking`):
+    * [container/controllers/WebFlowController.js], 
+    * [container/modules/webflow/webflow.js],
+    * [container/services/WebflowServiceProvider]
+    */
+    route.get ("webflow", "WebFlowController@index");
 }

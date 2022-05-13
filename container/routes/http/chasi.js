@@ -11,5 +11,4 @@ module.exports = function() {
     * [AuthRouteExceptions] array option.
     */
 
-    
 }

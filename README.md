@@ -1,4 +1,30 @@
 
+# accessing webflow endpoint 
+  ##[GET] ("https://webflow.com/websites/popular")
+  - please check the installation first;
+  - add your .env file first, you can copy [template.env]
+  - run the framework via node | nodemon 
+    ```
+    > node ./server.js
+    ```
+    or if you have nodemon installed on your machine 
+    ```
+    > nodemon server.js
+    ```
+  - access via [http://localhost:3000/webflow] path
+    available params
+    @params 
+    ```
+    // e.g. for pagination 'http://localhost:3000/webflow?limit=10&offset=2'
+          params: {
+            limit: 12,
+            offset: 0,
+            tag: "",
+            cloneable: false
+        }
+    ```
+
+
 # Chasi
 **RESTApi** Framework for **node.js**
 this framework implements services such as
@@ -104,3 +130,6 @@ by setting the configuration on "./config/compiler.js".
 this template requires 
 - nodejs: ^14.0.0
 - mongoDB: ^3.0.0
+
+
+

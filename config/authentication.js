@@ -3,8 +3,8 @@ module.exports = {
     gateway  : {
         api: {
             driver: 'jwt',
-            enabled: true,
-            sessions: true,
+            enabled: false,
+            sessions: false,
             key: 'Chasi',
             model: 'users',
             AuthRouteExceptions: [
@@ -53,20 +53,6 @@ module.exports = {
             ]
         },
 
-        test: {
-            driver: 'jwt',
-            enabled: true,
-            sessions: true,
-            key: 'Chasi',
-            model: 'users',
-            AuthRouteExceptions: [
-                /**
-                 * when enabled, all routes will
-                 * Be protected by [JWT]
-                 * to excempt some routes,
-                 * it should be registered here..
-                 */
-            ]
-        },
+
     }
 }
